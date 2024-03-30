@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://taimurayaz.github.io",
   "dependencies": {
+    "@heroicons/react": "^2.1.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -13,7 +14,10 @@
     "@types/react-dom": "^18.2.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1",
     "react-scripts": "5.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "remark-gfm": "^4.0.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -44,6 +48,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "@tailwindcss/typography": "^0.5.12",
+    "@types/react-syntax-highlighter": "^15.5.11",
+    "gh-pages": "^6.1.1",
+    "tailwindcss": "^3.4.3"
   }
 }
