@@ -1,4 +1,4 @@
-Privacy Policy
+Keys Privacy Policy
 ==============
 
 Last updated: April 01, 2024
