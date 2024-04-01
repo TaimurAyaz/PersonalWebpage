@@ -3,12 +3,12 @@ import remarkGfm from 'remark-gfm'
 import Markdown from "react-markdown";
 import LoadingPage from "./LoadingPage";
 
-export default function MainPage() {
+export default function MainPage(props: { markdownUrl: string}) {
     const [markdown, setMarkdown] = useState<string | undefined>(undefined);
 
     useEffect(() => {
         async function fetchFromAPI() {
-            let response = await fetch('https://raw.githubusercontent.com/TaimurAyaz/taimurayaz.github.io/master/content/resume.md')
+            let response = await fetch(props.markdownUrl)
             let blob = await response.blob()
             let text = await blob.text()
             setMarkdown(text)

@@ -1,8 +1,6 @@
-import React from "react";
 import { Navigate, RouteObject } from 'react-router-dom'
 import AppRoute from "./AppRoute";
 import MainPage from "./pages/MainPage";
-import LoadingPage from "./pages/LoadingPage";
 
 const AppRoutes: RouteObject[] = [
     {
@@ -14,7 +12,7 @@ const AppRoutes: RouteObject[] = [
         children: [
             {
                 path: AppRoute.defaultEmpty,
-                element: <MainPage />,
+                element: <MainPage markdownUrl="https://raw.githubusercontent.com/TaimurAyaz/personal_webpage/master/content/resume.md" />,
             },
             {
                 path: AppRoute.projects,
@@ -25,11 +23,11 @@ const AppRoutes: RouteObject[] = [
                     },
                     {
                         path: AppRoute.appKeys,
-                        element: <LoadingPage />,
+                        element: <MainPage markdownUrl="https://raw.githubusercontent.com/TaimurAyaz/personal_webpage/master/content/keys_pp.md" />,
                     },
                     {
                         path: AppRoute.appCircuit,
-                        element: <MainPage />,
+                        element: <MainPage markdownUrl="https://raw.githubusercontent.com/TaimurAyaz/personal_webpage/master/content/circuit_pp.md" />,
                     },
                 ],
             },
